@@ -15,12 +15,12 @@ from flask_login import current_user
 from flask_sqlalchemy import get_debug_queries
 from flask_wtf.csrf import CSRFError
 
-from bluelog.blueprints.admin import admin_bp
-from bluelog.blueprints.auth import auth_bp
-from bluelog.blueprints.blog import blog_bp
-from bluelog.extensions import bootstrap, db, login_manager, csrf, ckeditor, mail, moment, toolbar, migrate
-from bluelog.models import Admin, Post, Category, Comment, Link
-from bluelog.settings import config
+from .blueprints.admin import admin_bp
+from .blueprints.auth import auth_bp
+from .blueprints.blog import blog_bp
+from .extensions import bootstrap, db, login_manager, csrf, ckeditor, mail, moment, toolbar, migrate
+from .models import Admin, Post, Category, Comment, Link
+from .settings import config
 
 basedir = os.path.abspath(os.path.dirname(os.path.dirname(__file__)))
 
